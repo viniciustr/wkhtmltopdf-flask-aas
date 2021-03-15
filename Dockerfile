@@ -22,10 +22,10 @@ RUN ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 WORKDIR /
 
 COPY app.py /app.py
-COPY requeriments.txt /requeriments.txt
+COPY requirements.txt /requirements.txt
 
-RUN pip install -r requeriments.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 80
 
-CMD ["python","app.py"]
+CMD ["python", "app.py"]
