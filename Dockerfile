@@ -19,10 +19,10 @@ RUN wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkh
 RUN ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
 RUN ln -s /usr/local/bin/wkhtmltoimage /usr/bin/wkhtmltoimage
 
-WORKDIR /
+WORKDIR /usr/src
 
-COPY app.py /app.py
-COPY requirements.txt /requirements.txt
+COPY app.py ./app.py
+COPY requirements.txt ./requirements.txt
 
 RUN pip install -r requirements.txt
 
