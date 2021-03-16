@@ -1,4 +1,4 @@
-Flask
-pdfkit
-cherrypy
-paste
+Flask==1.1.2
+pdfkit==0.6.1
+cherrypy==17.4.2
+paste==3.5.0
